@@ -40,7 +40,7 @@ train_ds = train_ds.map(lambda x, y: (normalization_layer(x), y))
 val_ds = val_ds.map(lambda x, y: (normalization_layer(x), y))
 
 # ============================
-# 2. CNN Model Definition (2D version of your MATLAB CNN)
+# 2. CNN Model Definition
 # ============================
 
 inputs = layers.Input(shape=(1024, 1024, 1))
@@ -118,3 +118,4 @@ plt.grid(True)
 plt.savefig('training_loss.png')
 
 # End of script
+
